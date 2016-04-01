@@ -5,12 +5,12 @@ set -e # exit with nonzero exit code if anything fails
 rm -rf out || exit 0;
 mkdir out;
 
+# run our compile script, discussed above
+harp compile out/
+
 # go to the out directory and create a *new* Git repo
 cd out
 git init
-
-# run our compile script, discussed above
-harp compile out/
 
 # inside this git repo we'll pretend to be a new user
 git config user.name "Travis CI"
