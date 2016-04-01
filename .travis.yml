@@ -1,4 +1,4 @@
-script: bash ./deploy-gh-pages.sh
+script: bash ./deploy.sh
 env:
   global:
   - GH_REF: github.com/jordancolburn/suitcasestudio.git
