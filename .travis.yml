@@ -2,6 +2,11 @@ script: bash ./deploy.sh
 language: node_js
 node_js:
   - "5"
+before_script:  
+  - npm install -g bower
+  - npm install -g harp
+  - bower install
+  - npm install
 env:
   global:
   - GH_REF: github.com/jordancolburn/suitcasestudio.git

@@ -9,8 +9,6 @@ mkdir out;
 cd out
 git init
 
-npm install harp
-
 # run our compile script, discussed above
 harp compile out/
 
