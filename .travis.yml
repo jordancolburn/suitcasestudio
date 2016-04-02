@@ -1,13 +1,13 @@
-script: bash ./deploy.sh
 language: node_js
 node_js:
-  - "5"
+  - '0.10'
 before_script:  
   - npm install -g bower
   - npm install -g harp
   - bower install
   - npm install
   - chmod +x ./deploy.sh
+script: bash ./deploy.sh
 env:
   global:
   - GH_REF: github.com/jordancolburn/suitcasestudio.git
