@@ -5,8 +5,4 @@
   "dependencies": {
     "harp": "*"
   },
-  "engines": {
-    "node": "*",
-    "npm": "*"
-  }
 }
