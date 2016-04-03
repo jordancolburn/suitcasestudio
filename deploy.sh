@@ -8,6 +8,7 @@ echo "Target: gh-pages branch"
 TEMP_DIRECTORY="/tmp/__temp_static_content"
 CURRENT_COMMIT=`git rev-parse HEAD`
 ORIGIN_URL=`git config --get remote.origin.url`
+ORIGIN_URL_WITH_CREDENTIALS=${ORIGIN_URL/\/\/github.com/\/\/$GH_TOKEN@github.com}
 
 echo "Compiling new static content"
 mkdir $TEMP_DIRECTORY || exit 1
@@ -31,7 +32,7 @@ git config user.email "travis@jvandemo.com" || exit 1
 git add -A . || exit 1
 git commit --allow-empty -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
 
-git push --force --quiet "https://${GH_TOKEN}@{GH_REF}" gh-pages > /dev/null 2>&1
+git push --force --quiet "$ORIGIN_URL_WITH_CREDENTIALS" gh-pages > /dev/null 2>&1
 
 echo "Cleaning up temp files"
 rm -Rf $TEMP_DIRECTORY
