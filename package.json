@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "A Harp App",
   "dependencies": {
-    "harp": "0.11.x"
+    "harp": "*"
   },
   "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
+    "node": "*",
+    "npm": "*"
   }
 }
