@@ -11,6 +11,7 @@ ORIGIN_URL=`git config --get remote.origin.url`
 ORIGIN_URL_WITH_CREDENTIALS=${ORIGIN_URL/\/\/github.com/\/\/$GITHUB_TOKEN@github.com}
 
 echo "Compiling new static content"
+cd harp
 mkdir $TEMP_DIRECTORY || exit 1
 harp compile . $TEMP_DIRECTORY || exit 1
 cp .gitignore $TEMP_DIRECTORY || exit 1
