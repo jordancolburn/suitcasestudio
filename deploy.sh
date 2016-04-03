@@ -14,6 +14,7 @@ echo "Compiling new static content"
 cd harp
 mkdir $TEMP_DIRECTORY || exit 1
 harp compile . $TEMP_DIRECTORY || exit 1
+cd ..
 cp .gitignore $TEMP_DIRECTORY || exit 1
 
 echo "Checking out gh-pages branch"

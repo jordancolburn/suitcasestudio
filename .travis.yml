@@ -5,6 +5,7 @@ before_script:
   - npm install -g bower
   - npm install -g harp
   - bower install
+  - npm install
   - chmod +x ./deploy.sh
 script: bash ./deploy.sh
 env:
