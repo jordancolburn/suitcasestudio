@@ -1,14 +1,14 @@
 language: node_js
 node_js:
-  - '5'
-before_script:  
-  - npm install -g bower
-  - npm install -g harp
-  - bower install
-  - npm install
-  - chmod +x ./deploy.sh
+- '5'
+before_script:
+- npm install -g bower
+- npm install -g harp
+- bower install
+- npm install
+- chmod +x ./deploy.sh
 script: bash ./deploy.sh
 env:
   global:
   - GH_REF: github.com/jordancolburn/suitcasestudio.git
-  - secure: "g0lXYC6BAYWvGaNLZST1Yi7SaAW03DGXDL0WTw2lym8pK17e1GIE1tLkedX7ZGWnCtPM1StfAhMYHch1qi+GCMWtagtTmSf0LxEPUPgo6JvblX013fwYh1B4KuTp3HmcKlRuDoeLNAfN9ORpDg1pFcmdzm+z3RPTDOs3V1FYKrvFdDtlc6thVeJpONJR+6xalgl8UQOPZ7tqlR9TyR4UmfePoqVHAh/KSEFds8KCgHMsay24Pe41t9qjJ0Pwi4ma3S8sv0+sIAobAUqnFtA4Gbk87geABNpfbIih86+RbOBjPvHa9HCWOUnvKSiz8Cl5F5IMhiv0ZJYwpIdj+th93HtkrHLQiGQQW/8tOowRNQmcQKcoEQiIlOey/oqEGEpAcGTiQZ+4CrHOvCXChaHrXgoD2SRTZjEqiObxpGE7WByt82vq6ZtclDWv6P4xxiwBPymIWlP900tp2ZTd2t9D4rQaB1A+YdigqWJFgQcGAgUf9tWGNCfg9UNhXdn4pK8sRDY3iJvoioRp+SCMKGT6T1ei2J3IT5aWoEgIHZrhgu6KosqCr+3D/R6z5MsiPtV+4WV/UugqwNtaXGQmVeXaWXiqAl5UbpR0j7ZOgdTg1TOUnrCbWZmVlScXu1IEpa3gGDkFLPOvsFxZeYeID5C6vVOAsySVezr/xugqJQfoTS4="
+  - secure: tfrmF+H3LAhV9MKdgkWHe9CyIeHOQl87U5mNr4TveUgP1nnglmEKiyjXmQ92eWg+zMMcc+jQrZ7m4upfDOBsnmJxAzHLZaNSKGlsn3MtDia6pi4U8+CPK2JFWfuMuqlhJnkfI9CLmPi7dI8nAKhmi3YwpV8nDx/3AC0inx6VkdP+jEUO8irkY3kQe4suZ/AblhyY5v7bqCFc8Zd1r6EpH7Ghc3J+5ZlS09PisdPda/aaFIg41zr+EDfPm8Wi8g9lVH3OgUVGEUf68uziL+R4LHc1UlIBm61jEkroncJo036B4pq6rNUVHt3mf7Au1cHx4z6mknJH5DtIb7N4Hr053HCT5oiiD1VFW1OwApZxDTQcxIevy/4xSBsyhks2suxv4DSLpARhpYs1Jpci0Tn7rw8BhZg3G13IW3AF+Bo7duSQGaSAXrYNQxZ+01mINaEz3XUZziYv7wrBSX+mtoBI9J4JcHX/o+YgffHn10XZAdojd9V0Y+a5S6vLelEnmzjKOw+T0RlfsaL6F6L7ano2NMaYtjZONG5LJC7QZzcJZ722zROmRGZqhmB9Nh20VdTBrGc4guAPMQPqgRaG5dB6KeiEsX+0mmpHr8aw5iD0rV/BcI6IiVr7er+PEgdnE0+c8ocKw7tzaUmJ3yact3gCrL5mdeJhvePRP4Wh1Ec8dB0=
