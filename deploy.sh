@@ -23,6 +23,7 @@ git rm -rf . || exit 1
 
 echo "Copying newly generated static content"
 cp -r $TEMP_DIRECTORY/* . || exit 1
+echo "$DOMAIN_NAME" > CNAME
 cp $TEMP_DIRECTORY/.gitignore . || exit 1
 
 echo "Pushing new content to $ORIGIN_URL"
