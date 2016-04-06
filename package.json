@@ -1,8 +1,0 @@
-{
-  "name": "Harp",
-  "version": "1.0.0",
-  "description": "A Harp App",
-  "dependencies": {
-    "harp": "*"
-  },
-}
